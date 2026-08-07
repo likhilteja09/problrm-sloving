@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Deque<Integer> dq = new ArrayDeque<>();
+
+        // Add elements
+        dq.addFirst(10);
+        dq.addLast(20);
+        dq.addFirst(5);
+        dq.addLast(30);
+
+        System.out.println("Deque: " + dq);
+
+        // Remove elements
+        System.out.println("Removed First: " + dq.removeFirst());
+        System.out.println("Removed Last: " + dq.removeLast());
+
+        System.out.println("Deque after removal: " + dq);
+
+        // Peek elements
+        System.out.println("First Element: " + dq.peekFirst());
+        System.out.println("Last Element: " + dq.peekLast());
+    }
+}
